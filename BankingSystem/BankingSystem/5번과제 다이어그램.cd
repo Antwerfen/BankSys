@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AccountHandler">
+    <Position X="7.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAIAZIAAAAAoBAAAAIAAEBgECAAACmAAACAEA=</HashCode>
+      <FileName>AccountHandler.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="accList" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Account">
+    <Position X="0.5" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BEAAAAAAABAAIIAAAAEAAAQIgMAQAhAAgIAAAAAQAkE=</HashCode>
+      <FileName>Account.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HighCreditAccount">
+    <Position X="3.25" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAABFAAAAAAAAQEAAAAAAIAQAgAAAAAGAAAQAEA=</HashCode>
+      <FileName>HighCreditAccount.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NormalAccount">
+    <Position X="5.5" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAACBACAIAAAABAABAAAAAAAAAAwAAAAAAAAAE=</HashCode>
+      <FileName>NormalAccount.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="String">
+    <Position X="5.5" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAQAAAAEAACAABAAgAAAAgAA=</HashCode>
+      <FileName>String.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Typedef Name="Account_ptr" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AccountHandler.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>
