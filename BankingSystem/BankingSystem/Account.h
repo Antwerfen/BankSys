@@ -3,7 +3,7 @@
 
 #include "MiniBankingCommonDecl.h"
 #include "String.h"
-#include "error_cluster.h"
+
 
 
 
@@ -22,6 +22,9 @@ public:
 	//생성자
 	Account(int input_accID, const String input_cusName);
 	
+	//불러오기용 생성자
+	Account(int input_accID, const String input_cusName, int input_balance);
+
 	//복사
 	Account(Account& copy);
 
@@ -37,7 +40,7 @@ public:
 	//잔액 송출
 	int balance_return()const;
 	//이름 송출
-	void name_return()const;
+	String name_return()const;
 
 	//돈 넣기
 	void input_money(int input_money);
@@ -47,17 +50,17 @@ public:
 
 	
 	
-	virtual void level_return() ;
+	virtual String level_return() ; //보통예금을 나타내는 숫자 리턴
 	
-	virtual double level_ratio_return();
+	virtual double level_ratio_return();	//보통예금의 이자 리턴
 	
-	virtual void High_level_name_return();
+	virtual String High_level_name_return();	//보통예금이라는 이름을 리턴
 
-	virtual double High_level_ratio_return();
+	virtual double High_level_ratio_return();	//신용계좌 기본 이자 리턴
 
-	virtual double High_plus_ratio_return();
+	virtual double High_plus_ratio_return();	//신용계좌 추가 이자 리턴
 
-	virtual int high_acc_return();//신용게좌임을 알려주는 함수
+	virtual int high_acc_return();//신용계좌임을 알려주는 함수
 
 	virtual int normal_acc_return();//보통계좌임을 알려주는 함수
 
@@ -67,7 +70,7 @@ public:
 	
 	virtual void plus_normal_cnt();//보통계좌의 cnt를 늘리는 함수
 
-	virtual void plus_high_cnt();
+	virtual void plus_high_cnt();	//신용계좌의 cnt를 늘리는 함수
 
 	
 

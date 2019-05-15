@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AccountHandler">
+    <Position X="7.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIQAAAoAZIAAAAAoBAAAAIAAEBgECAAACmAAACAEA=</HashCode>
+      <FileName>AccountHandler.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="accList" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Account">
+    <Position X="0.5" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>BEAAAAAAABAAIIAAAAEAAAQIgMAQAhAAgIAAAAAQAkE=</HashCode>
+      <FileName>Account.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Input_error">
+    <Position X="5.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>ErrorCluster.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Output_error">
+    <Position X="7.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAEAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>ErrorCluster.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_error">
+    <Position X="3.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABABAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ErrorCluster.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HighCreditAccount">
+    <Position X="4" Y="1.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABFAAAAAAAAQEAAAAAAIAQAgAAAAAGAAAQAEA=</HashCode>
+      <FileName>HighCreditAccount.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NormalAccount">
+    <Position X="4" Y="5.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAACBACAIAAAABAABAAAAAAAAAAwAAAAAAAAAE=</HashCode>
+      <FileName>NormalAccount.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="String">
+    <Position X="0.5" Y="7.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAQAAAAEAACAABAAgAAAAgAA=</HashCode>
+      <FileName>String.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Typedef Name="Account_ptr" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AccountHandler.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>

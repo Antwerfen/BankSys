@@ -39,7 +39,10 @@
     <ClInclude Include="String.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="error_cluster.h">
+    <ClInclude Include="ErrorCluster.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Account_template.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
@@ -68,12 +71,17 @@
     <ClCompile Include="String.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="error_cluster.cpp">
+    <ClCompile Include="ErrorCluster.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Account_template.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="4번과제 다이어그램.cd" />
     <None Include="5번과제 다이어그램.cd" />
+    <None Include="6번과제 다이어그램.cd" />
+    <None Include="7번과제 다이어그램.cd" />
   </ItemGroup>
 </Project>

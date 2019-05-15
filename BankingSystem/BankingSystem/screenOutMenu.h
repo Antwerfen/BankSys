@@ -3,6 +3,7 @@
 
 #include "MiniBankingCommonDecl.h"
 #include "AccountHandler.h"
+#include "Account.h"
 
 
 
@@ -11,7 +12,9 @@ void ShowMenu(void);
 //계좌개설 메뉴
 void ShowAccMakeMenu(void);
 
-void Show_create_acc_result(int checker);
+//void Show_create_acc_result(int checker);
+
+
 
 
 

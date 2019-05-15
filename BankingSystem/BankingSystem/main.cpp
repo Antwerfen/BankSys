@@ -9,7 +9,9 @@
 
 int main(void)
 {
+	
 	AccountHandler Handler;
+	Handler.Read_data_file();
 		
 		int choice;
 		//int acc_select;
@@ -51,6 +53,7 @@ int main(void)
 				
 				
 			case EXIT:
+				//delete Handler;
 				cout << "이용해주셔서 감사합니다." << endl;
 				
 				return 0;

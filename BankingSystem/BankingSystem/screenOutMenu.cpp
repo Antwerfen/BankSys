@@ -28,45 +28,49 @@ void ShowAccMakeMenu(void)
 }
 
 
-void Show_create_acc_result(int checker)
+
+/*
+int Show_create_result(Account *address,int checker,int acc)
 {
-	AccountHandler test;
-	int idx = test.accNum_return() -1 ;
+	//int idx = address->accNum_return() - 1;
 	
-	switch (checker)
+	
+}
+*/
+
+
+/*
+int r_show::Show_create_result(Account* address, int checker, int acc)
+{
+	if (address->normal_acc_return() == 1)
+
 	{
-	case 1:
 		cout << " 입력하신 정보를 확인하시기 바랍니다." << endl;
 		cout << "====================================" << endl;
-		cout << "	계좌번호 : " << test.accList_return(idx)->accID_return() << endl;
-		cout << "	계좌종류 : ";
-		test.accList_return(idx)->level_return(); cout << endl;
-		cout << "	예금이자 : " << test.accList_return(idx)->level_ratio_return() << "%" << endl;
-		cout << "	잔    액 : " << test.accList_return(idx)->balance_return() << "원" << endl;
-		cout << "	고객성명 : ";
-		test.accList_return(idx)->name_return(); cout << "님" << endl;
+		cout << "	계좌번호 : " << address->accID_return() << endl;
+		cout << "	계좌종류 : " << address->level_return(); cout << endl;
+		cout << "	예금이자 : " << address->level_ratio_return() << "%" << endl;
+		cout << "	잔    액 : " << address->balance_return() << "원" << endl;
+		cout << "	고객성명 : " << address->name_return(); cout << "님" << endl;
 		cout << "====================================" << endl;
-		break;
-
-	case 2:
-		cout << " 입력하신 정보를 확인하시기 바랍니다." << endl;
-		cout << "====================================" << endl;
-		cout << "	계좌번호 : " << test.accList_return(idx)->accID_return() << endl;
-		cout << "	계좌종류 : ";
-		test.accList_return(idx)->High_level_name_return(); cout << ' ' << endl;
-		cout << "	예금이자 : " << test.accList_return(idx)->High_level_ratio_return() << endl;
-		cout << "	추가이자 : " << test.accList_return(idx)->High_plus_ratio_return() << endl;
-		cout << "	잔    액 : " << test.accList_return(idx)->balance_return() << "원" << endl;
-		cout << "	고객성명 : ";
-		test.accList_return(idx)->name_return(); cout << "님" << endl;
-		cout << "====================================" << endl;
-		break;
-
-	default:
-		cout << "언제나 함께하는 xx은행" << endl;
-		break;
+		return 0;
 	}
 
+
+	else if (address->high_acc_return() == 2)
+	{
+		cout << " 입력하신 정보를 확인하시기 바랍니다." << endl;
+		cout << "====================================" << endl;
+		cout << "	계좌번호 : " << address->accID_return() << endl;
+		cout << "	계좌종류 : " << address->High_level_name_return(); cout << ' ' << endl;
+		cout << "	예금이자 : " << address->High_level_ratio_return() << "%" << endl;
+		cout << "	추가이자 : " << address->High_plus_ratio_return() << "%" << endl;
+		cout << "	잔    액 : " << address->balance_return() << "원" << endl;
+		cout << "	고객성명 : " << address->name_return(); cout << "님" << endl;
+		cout << "====================================" << endl;
+		return 0;
+	}
+
+	return 0;
 }
-
-
+*/

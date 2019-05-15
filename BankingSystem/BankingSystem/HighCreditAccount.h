@@ -22,8 +22,15 @@ public:
 	//»ý¼ºÀÚ?
 	HighCreditAccount(int acc_id, const String cusName, const char* level_rank );
 
+	//acc_num, acc_ID, r_balance, cus_name, high_name, high_ratio, high_plus_ratio, cnt
 	
-	void High_level_name_return();
+	HighCreditAccount(int level_sepa, int acc_num, int acc_ID, int r_balance,
+		const char* cus_name, const char* high_name, double high_ratio, 
+		double high_plus_ratio,int cnt);
+
+
+
+	String High_level_name_return();
 	
 
 	double High_level_ratio_return();

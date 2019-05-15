@@ -2,13 +2,23 @@
 #include "ACCOUNT.h"
 #include "NormalAccount.h"
 #include "String.h"
+#include "ErrorCluster.h"
 
-
+//취업면접비법
+//돈 불러오는 걸로 초기화 시키는거 만들어야겠다.
 Account::Account(int input_accID, const String input_cusName)
 	:accID(input_accID), balance(0)
 {
 	cusName = input_cusName;
 }
+
+Account::Account(int input_accID, const String input_cusName, int input_balance)
+	:accID(input_accID),cusName(input_cusName), balance(input_balance)
+{
+	//^ ㅇ^/
+}
+
+
 
 //복사
 Account::Account(Account& copy)
@@ -28,6 +38,7 @@ int Account::Search_accID()const
 //계좌번호 송출
 int Account::accID_return() const
 {
+	
 	return accID;
 }
 
@@ -44,24 +55,30 @@ int Account::def_balance()const
 }
 
 //이름 송출
-void Account::name_return() const
+String Account::name_return() const
 {
-	cout <<cusName;
+	return cusName;
 }
 
 //돈 넣기
 void Account::input_money(int input_money)
 {
+
 	balance = balance + input_money;
 }
 
 //돈 빼기
 int Account::output_money(int output_money)
 {
+	int t;
 	if (balance < output_money)
 	{
-		cout << "잔액보다 출금하려는 액수가 더 큽니다." << endl<<endl;
-		return -1;
+		t = 1;
+		Output_error expn(output_money);
+		throw expn;
+
+		//cout << "잔액보다 출금하려는 액수가 더 큽니다." << endl<<endl;
+		//return -1;
 	}
 	else
 	{
@@ -73,8 +90,9 @@ int Account::output_money(int output_money)
 
 
 //--------------------보통예금이라는 이름을 리턴
-void Account::level_return()
+String Account::level_return()
 {
+	return 0;
 }
 
 
@@ -86,8 +104,9 @@ double Account::level_ratio_return()
 
 
 //-------------------신용예금이라는 이름을 리턴
-void Account::High_level_name_return()
+String Account::High_level_name_return()
 {
+	return 0;
 }
 
 //------------------신용예금의 기초 이자 리턴

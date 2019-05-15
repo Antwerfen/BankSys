@@ -145,7 +145,8 @@
   <ItemGroup>
     <ClInclude Include="AccountHandler.h" />
     <ClInclude Include="Account.h" />
-    <ClInclude Include="error_cluster.h" />
+    <ClInclude Include="Account_template.h" />
+    <ClInclude Include="ErrorCluster.h" />
     <ClInclude Include="etc.h" />
     <ClInclude Include="HighCreditAccount.h" />
     <ClInclude Include="MiniBankingCommonDecl.h" />
@@ -156,7 +157,8 @@
   <ItemGroup>
     <ClCompile Include="AccountHandler.cpp" />
     <ClCompile Include="Account.cpp" />
-    <ClCompile Include="error_cluster.cpp" />
+    <ClCompile Include="Account_template.cpp" />
+    <ClCompile Include="ErrorCluster.cpp" />
     <ClCompile Include="HighCreditAccount.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NormalAccount.cpp" />
@@ -167,6 +169,8 @@
   <ItemGroup>
     <None Include="4번과제 다이어그램.cd" />
     <None Include="5번과제 다이어그램.cd" />
+    <None Include="6번과제 다이어그램.cd" />
+    <None Include="7번과제 다이어그램.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -12,7 +12,7 @@ char C[8] = { "C등급" };
 char High_Level[LEVEL_LEN] = { "신용신뢰계좌" };
 
 
-
+//기본적인 생성자
 HighCreditAccount::HighCreditAccount(int acc_id, const String cusName, const char* level_rank)
 	:Account(acc_id, cusName), High_ratio(0.0), high_state_high(0)
 {
@@ -44,9 +44,20 @@ HighCreditAccount::HighCreditAccount(int acc_id, const String cusName, const cha
 
 }
 
-	void HighCreditAccount::High_level_name_return() //계좌종류 리턴
+//복구를 위한 생성자
+HighCreditAccount::HighCreditAccount(int level_sepa, int acc_num, int acc_ID, 
+	int r_balance, const char* cus_name, const char* high_name, 
+	double high_ratio, double high_plus_ratio, int cnt)
+	:Account(acc_ID, cus_name,r_balance),high_level_def_ratio(high_ratio),High_ratio(high_plus_ratio),
+	high_cnt_input(cnt),high_state_high(level_sepa)
+{
+	int len = strlen(high_name) + 1;
+	strcpy_s(high_level_name, len, high_name);
+}
+
+String HighCreditAccount::High_level_name_return() //계좌종류 리턴
 	{
-		cout << high_level_name;
+		return high_level_name;
 	}
 
 	double HighCreditAccount::High_level_ratio_return() //기본 이자
